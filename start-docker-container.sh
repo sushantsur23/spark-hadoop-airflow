@@ -13,7 +13,7 @@ docker run -it \
     -p 8085:8085 \
     -p 8793:8793 \
     -p 8081:8081 \
-    -v $PROJECT_DIR/project/notebook:/root/ipynb \
-    -v $PROJECT_DIR/project/airflow:/home/airflow \
-    -v $PROJECT_DIR/data:/data \
-    spark-hadoop-airflow
+    -v notebook:/root/ipynb \
+    -v airflow:/home/airflow \
+    -v data:/data \
+    spark-hadoop-airflow:latest
